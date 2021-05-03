@@ -135,6 +135,24 @@ footer {
   padding: 3px 15px;
   text-align: center;
   color: white;
+  display: flex;
+}
+
+#logoFooter,
+#menuFooter {
+  flex: 1;
+}
+
+#logoFooter {
+  padding: 15px 0;
+}
+
+#logoFooter img {
+  width: 100px;
+}
+
+#enlacesFooter {
+  flex: 3;
 }
 
 footer a {
@@ -146,16 +164,16 @@ footer a:hover {
   opacity: 0.7;
 }
 
-footer ul {
+#enlacesFooter ul {
   list-style: none;
   padding: 0;
 }
 
-footer svg {
+#enlacesFooter svg {
   margin-right: 3px;
 }
 
-footer ul li {
+#enlacesFooter ul li {
   display: inline;
   padding: 8px;
 }
@@ -173,6 +191,21 @@ footer ul li {
 .youtube:hover a {
   color: #ff0000;
   font-weight: bold;
+}
+
+#menuFooter ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 670px) {
+  footer {
+    flex-direction: column;
+  }
+
+  #enlacesFooter {
+    order: 3;
+  }
 }
 
 /*INICIO*/
@@ -292,7 +325,7 @@ footer ul li {
   #inicio .grid-categorias div {
     width: 80%;
     flex: none;
-    margin: 15px;
+    margin: 15px auto;
   }
 }
 
