@@ -228,6 +228,8 @@ footer a:hover {
   font-size: 40px;
   color: wheat;
   text-shadow: 2px 2px #000000;
+  animation: portadaTitle;
+  animation-duration: 1s;
 }
 
 #inicio .portada img {
@@ -246,6 +248,8 @@ footer a:hover {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: portadaTitle;
+  animation-duration: 1s;
 }
 
 #inicio .portada button:hover {
@@ -273,6 +277,7 @@ footer a:hover {
   font-weight: bold;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   font-size: 20px;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
 #inicio .grid-categorias div a {
@@ -309,6 +314,15 @@ footer a:hover {
   background-size: cover;
 }
 
+@keyframes portadaTitle {
+  0% {
+    transform: translate(-50%, -500%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (max-width: 670px) {
   #inicio .portada {
     background-position: left center;
@@ -326,6 +340,20 @@ footer a:hover {
     width: 80%;
     flex: none;
     margin: 15px auto;
+    clip-path: polygon(
+      0% 15%,
+      15% 15%,
+      15% 0%,
+      85% 0%,
+      85% 15%,
+      100% 15%,
+      100% 85%,
+      85% 85%,
+      85% 100%,
+      15% 100%,
+      15% 85%,
+      0% 85%
+    );
   }
 }
 
@@ -534,6 +562,14 @@ footer a:hover {
   background-color: wheat;
   padding: 15px;
   text-align: center;
+  animation-name: presentacion;
+  animation-duration: 1s;
+}
+
+#presentacion .svgTitle {
+  width: 300px;
+  animation-name: title;
+  animation-duration: 1s;
 }
 
 #presentacion h1 {
@@ -550,6 +586,30 @@ footer a:hover {
 #presentacion p,
 #presentacion ul {
   text-align: left;
+}
+
+@keyframes presentacion {
+  from {
+    margin-left: -100%;
+    margin-right: -100%;
+  }
+  to {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@keyframes title {
+  0% {
+    transform: rotate3d(1, 1, 1, 120deg);
+  }
+  50% {
+    transform: rotate3d(1, 1, 1, 0deg);
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /*ENLACES*/
