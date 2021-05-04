@@ -100,6 +100,7 @@ span.hidden {
 #res-menu-items.hidden {
   opacity: 0;
   transition: all 0.5s;
+  pointer-events: none;
 }
 
 #res-menu-items.hidden ul li {
@@ -291,25 +292,25 @@ footer a:hover {
 }
 
 #inicio .entrantes {
-  background: url('../images/entrantes.jpg');
+  background: url('../images/entrantes670.jpg');
   background-position: center center;
   background-size: cover;
 }
 
 #inicio .guisos {
-  background: url('../images/guiso.jpg');
+  background: url('../images/guiso670.jpg');
   background-position: center center;
   background-size: cover;
 }
 
 #inicio .ibericos {
-  background: url('../images/ibericos.jpg');
+  background: url('../images/ibericos670.jpg');
   background-position: center center;
   background-size: cover;
 }
 
 #inicio .postres {
-  background: url('../images/postre.jpg');
+  background: url('../images/postre670.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -325,7 +326,10 @@ footer a:hover {
 
 @media (max-width: 670px) {
   #inicio .portada {
+    background: url('../../assets/images/toroPortada670.jpg');
     background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   #inicio .portada button {
@@ -400,7 +404,7 @@ footer a:hover {
 #categorias .entrantes {
   grid-column: 1;
   grid-row: 1;
-  background: url('../images/entrantes.jpg');
+  background: url('../images/entrantes670.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -408,7 +412,7 @@ footer a:hover {
 #categorias .guisos {
   grid-column: 2;
   grid-row: 1;
-  background: url('../images/guiso.jpg');
+  background: url('../images/guiso670.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -416,7 +420,7 @@ footer a:hover {
 #categorias .ibericos {
   grid-column: 1;
   grid-row: 2;
-  background: url('../images/ibericos.jpg');
+  background: url('../images/ibericos670.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -424,13 +428,14 @@ footer a:hover {
 #categorias .postres {
   grid-column: 2;
   grid-row: 2;
-  background: url('../images/postre.jpg');
+  background: url('../images/postre670.jpg');
   background-position: center center;
   background-size: cover;
 }
 
 @media (max-width: 670px) {
   #categorias .portada {
+    background: url('../images/categorias670.jpg');
     background-position: left center;
   }
 
@@ -484,6 +489,7 @@ footer a:hover {
 
 @media (max-width: 670px) {
   #elementos .portada {
+    background: url('../images/categorias670.jpg');
     background-position: left center;
   }
 
@@ -513,6 +519,7 @@ footer a:hover {
 }
 
 #detalles article .texto,
+#detalles article .alergenos,
 #detalles article .ingredientes {
   box-shadow: 2px 3px 2px 1px rgba(0, 0, 0);
   background-color: wheat;
@@ -526,6 +533,26 @@ footer a:hover {
 
 #detalles article .texto span {
   font-weight: bold;
+}
+
+#detalles article .alergenos img {
+  width: 100%;
+}
+
+#detalles article .covid {
+  box-shadow: 2px 3px 2px 1px rgba(0, 0, 0);
+  background-color: wheat;
+  padding: 15px;
+  text-align: center;
+}
+
+#detalles article .covid h4 {
+  text-align: left;
+}
+
+#detalles article .covid img {
+  width: 40%;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .volver-categoria {
@@ -548,6 +575,7 @@ footer a:hover {
 
 @media (max-width: 670px) {
   #detalles {
+    background: url('../images/categorias670.jpg');
     background-position: left center;
   }
 
