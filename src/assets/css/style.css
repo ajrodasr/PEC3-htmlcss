@@ -211,7 +211,10 @@ footer a:hover {
 
 /*INICIO*/
 #inicio .portada {
-  background: url('../../assets/images/toroPortada.jpg');
+  background-image: image-set(
+    url('../../assets/images/toroPortada670.jpg') 1x,
+    url('../../assets/images/toroPortada.jpg') 2x
+  );
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -228,6 +231,7 @@ footer a:hover {
   transform: translate(-50%, -50%);
   font-size: 40px;
   color: wheat;
+  background: none;
   text-shadow: 2px 2px #000000;
   animation: portadaTitle;
   animation-duration: 1s;
@@ -292,25 +296,31 @@ footer a:hover {
 }
 
 #inicio .entrantes {
-  background: url('../images/entrantes670.jpg');
+  background-image: image-set(
+    url('../images/entrantes670.jpg') 1x,
+    url('../images/entrantes.jpg') 2x
+  );
   background-position: center center;
   background-size: cover;
 }
 
 #inicio .guisos {
-  background: url('../images/guiso670.jpg');
+  background-image: image-set(url('../images/guiso670.jpg') 1x, url('../images/guiso.jpg') 2x);
   background-position: center center;
   background-size: cover;
 }
 
 #inicio .ibericos {
-  background: url('../images/ibericos670.jpg');
+  background-image: image-set(
+    url('../images/ibericos670.jpg') 1x,
+    url('../images/ibericos.jpg') 2x
+  );
   background-position: center center;
   background-size: cover;
 }
 
 #inicio .postres {
-  background: url('../images/postre670.jpg');
+  background-image: image-set(url('../images/postre670.jpg') 1x, url('../images/postre.jpg') 2x);
   background-position: center center;
   background-size: cover;
 }
@@ -326,7 +336,6 @@ footer a:hover {
 
 @media (max-width: 670px) {
   #inicio .portada {
-    background: url('../../assets/images/toroPortada670.jpg');
     background-position: left center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -364,7 +373,10 @@ footer a:hover {
 /*CATEGORIAS*/
 
 #categorias .portada {
-  background: url('../images/categorias.jpg');
+  background-image: image-set(
+    url('../images/categorias670.jpg') 1x,
+    url('../images/categorias.jpg') 2x
+  );
   background-position: center center;
   background-size: cover;
   padding: 15px;
@@ -412,7 +424,7 @@ footer a:hover {
 #categorias .guisos {
   grid-column: 2;
   grid-row: 1;
-  background: url('../images/guiso670.jpg');
+  background-image: image-set(url('../images/guiso670.jpg') 1x, url('../images/guiso.jpg') 2x);
   background-position: center center;
   background-size: cover;
 }
@@ -420,7 +432,10 @@ footer a:hover {
 #categorias .ibericos {
   grid-column: 1;
   grid-row: 2;
-  background: url('../images/ibericos670.jpg');
+  background-image: image-set(
+    url('../images/ibericos670.jpg') 1x,
+    url('../images/ibericos.jpg') 2x
+  );
   background-position: center center;
   background-size: cover;
 }
@@ -428,14 +443,13 @@ footer a:hover {
 #categorias .postres {
   grid-column: 2;
   grid-row: 2;
-  background: url('../images/postre670.jpg');
+  background-image: image-set(url('../images/postre670.jpg') 1x, url('../images/postre.jpg') 2x);
   background-position: center center;
   background-size: cover;
 }
 
 @media (max-width: 670px) {
   #categorias .portada {
-    background: url('../images/categorias670.jpg');
     background-position: left center;
   }
 
@@ -446,7 +460,10 @@ footer a:hover {
 
 /*ELEMENTOS CATEGORIAS*/
 #elementos .portada {
-  background: url('../images/categorias.jpg');
+  background-image: image-set(
+    url('../images/categorias670.jpg') 1x,
+    url('../images/categorias.jpg') 2x
+  );
   background-position: center center;
   background-size: contain;
   padding: 15px;
@@ -489,7 +506,6 @@ footer a:hover {
 
 @media (max-width: 670px) {
   #elementos .portada {
-    background: url('../images/categorias670.jpg');
     background-position: left center;
   }
 
@@ -501,7 +517,10 @@ footer a:hover {
 
 /*DETALLES ELEMENTOS*/
 #detalles {
-  background: url('../images/categorias.jpg');
+  background-image: image-set(
+    url('../images/categorias670.jpg') 1x,
+    url('../images/categorias.jpg') 2x
+  );
   background-position: center center;
   background-size: contain;
   padding: 15px;
@@ -575,7 +594,6 @@ footer a:hover {
 
 @media (max-width: 670px) {
   #detalles {
-    background: url('../images/categorias670.jpg');
     background-position: left center;
   }
 
