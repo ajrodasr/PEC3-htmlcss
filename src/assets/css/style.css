@@ -231,8 +231,10 @@ footer a:hover {
   transform: translate(-50%, -50%);
   font-size: 40px;
   color: wheat;
-  background: none;
+  background-color: #0b530b86;
   text-shadow: 2px 2px #000000;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 15px;
   animation: portadaTitle;
   animation-duration: 1s;
 }
