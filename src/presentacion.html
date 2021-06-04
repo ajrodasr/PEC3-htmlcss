@@ -28,13 +28,7 @@
           </ul>
         </div>
         <div id="logo">
-          <a href="/"
-            ><img
-              data-src="./assets/images/logo.png"
-              alt="El Monte"
-              loading="lazy"
-              class="lazyload"
-          /></a>
+          <a href="/"><img src="./assets/images/logo.png" alt="El Monte" loading="lazy" /></a>
         </div>
         <div id="menu">
           <ul>
@@ -49,10 +43,9 @@
       <article>
         <img
           class="svgTitle"
-          data-src="./assets/images/presentacion/presentacion.svg"
+          src="./assets/images/presentacion/presentacion.svg"
           alt="Presentación"
           loading="lazy"
-          class="lazyload"
         />
         <p>
           En esta web se representa como estaría distribuida una aplicación web accesible de ejemplo
@@ -82,12 +75,7 @@
                 media="(max-width: 670px)"
                 srcset="assets/images/presentacion/portada670.jpg"
               />
-              <img
-                data-src="assets/images/presentacion/portada.jpg"
-                alt="Portada"
-                loading="lazy"
-                class="lazyload"
-              />
+              <img src="assets/images/presentacion/portada.jpg" alt="Portada" loading="lazy" />
             </picture>
 
             <p>
@@ -102,10 +90,9 @@
                 srcset="assets/images/presentacion/categorias-portada670.jpg"
               />
               <img
-                data-src="assets/images/presentacion/categorias-portada.jpg"
+                src="assets/images/presentacion/categorias-portada.jpg"
                 alt="Categorías de la portada"
                 loading="lazy"
-                class="lazyload"
               />
             </picture>
           </section>
@@ -123,10 +110,9 @@
                 srcset="assets/images/presentacion/categorias670.jpg"
               />
               <img
-                data-src="assets/images/presentacion/categorias.jpg"
+                src="assets/images/presentacion/categorias.jpg"
                 alt="Categorias"
                 loading="lazy"
-                class="lazyload"
               />
             </picture>
 
@@ -157,9 +143,7 @@
     </main>
     <footer>
       <div id="logoFooter">
-        <a href="/"
-          ><img data-src="./assets/images/logo.png" alt="El Monte" loading="lazy" class="lazyload"
-        /></a>
+        <a href="/"><img src="./assets/images/logo.png" alt="El Monte" loading="lazy" /></a>
       </div>
       <div id="enlacesFooter">
         <div>
@@ -194,25 +178,6 @@
         </ul>
       </div>
     </footer>
-    <script src="./assets/js/index.js"></script>
-    <script>
-      if ('loading' in HTMLImageElement.prototype) {
-        // Si el navegador soporta lazy-load, tomamos todas las imágenes que tienen la clase
-        // `lazyload`, obtenemos el valor de su atributo `data-src` y lo inyectamos en el `src`.
-        console.log('Hola');
-        const images = document.querySelectorAll('img.lazyload');
-        images.forEach((img) => {
-          console.log(img);
-          img.src = img.dataset.src;
-        });
-      } else {
-        // Importamos dinámicamente la libreria `lazysizes`
-        console.log('Adios');
-        let script = document.createElement('script');
-        script.async = true;
-        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js';
-        document.body.appendChild(script);
-      }
-    </script>
+    <script async src="./assets/js/index.js"></script>
   </body>
 </html>
