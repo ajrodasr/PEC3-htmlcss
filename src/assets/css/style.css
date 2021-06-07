@@ -26,10 +26,6 @@ nav a:hover {
   padding: 15px;
 }
 
-#logo img {
-  width: 100%;
-}
-
 #menu {
   flex: 8;
   text-align: center;
@@ -116,10 +112,6 @@ span.hidden {
     margin-left: -10%;
   }
 
-  #logo img {
-    width: 100px;
-  }
-
   #menu {
     display: none;
   }
@@ -146,10 +138,6 @@ footer {
 
 #logoFooter {
   padding: 15px 0;
-}
-
-#logoFooter img {
-  width: 100px;
 }
 
 #enlacesFooter {
@@ -548,8 +536,13 @@ footer a:hover {
   text-align: left;
 }
 
+#detalles article .alergenos {
+  text-align: center;
+}
+
 #detalles article .image img {
   width: 100%;
+  height: auto;
 }
 
 #detalles article .texto span {
@@ -558,6 +551,7 @@ footer a:hover {
 
 #detalles article .alergenos img {
   width: 100%;
+  height: auto;
 }
 
 #detalles article .covid {
@@ -572,7 +566,6 @@ footer a:hover {
 }
 
 #detalles article .covid img {
-  width: 40%;
   filter: drop-shadow(2px 4px 6px black);
 }
 
