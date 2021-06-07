@@ -364,8 +364,8 @@ footer a:hover {
 
 #categorias .portada {
   background-image: image-set(
-    url('../images/categorias670.jpg') 1x,
-    url('../images/categorias.jpg') 2x
+    url('../images/categorias670.webp') 1x,
+    url('../images/categorias.webp') 2x
   );
   background-position: center center;
   background-size: cover;
@@ -451,8 +451,8 @@ footer a:hover {
 /*ELEMENTOS CATEGORIAS*/
 #elementos .portada {
   background-image: image-set(
-    url('../images/categorias670.jpg') 1x,
-    url('../images/categorias.jpg') 2x
+    url('../images/categorias670.webp') 1x,
+    url('../images/categorias.webp') 2x
   );
   background-position: center center;
   background-size: contain;
@@ -508,8 +508,8 @@ footer a:hover {
 /*DETALLES ELEMENTOS*/
 #detalles {
   background-image: image-set(
-    url('../images/categorias670.jpg') 1x,
-    url('../images/categorias.jpg') 2x
+    url('../images/categorias670.webp') 1x,
+    url('../images/categorias.webp') 2x
   );
   background-position: center center;
   background-size: contain;
